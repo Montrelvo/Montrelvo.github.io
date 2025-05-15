@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+        // Get the base URL from the index.html base tag
+        var baseHref = "/"; // Default to root
+        var baseTag = document.querySelector('base');
+        if (baseTag) {
+            baseHref = baseTag.getAttribute('href');
+        }
+
+        // Redirect to index.html, preserving the path
+        var path = window.location.pathname;
+        if (path.startsWith(baseHref)) {
+            path = path.substring(baseHref.length);
+        }
+        window.location.replace(baseHref + "?path=" + encodeURIComponent(path) + window.location.search + window.location.hash);
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

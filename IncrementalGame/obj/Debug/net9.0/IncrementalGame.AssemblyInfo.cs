@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IncrementalGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f6525ee5149556a84044ada3d396f8298dfa9f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5879cc97a721137c050b526af9b0efae6be7bb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("IncrementalGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IncrementalGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

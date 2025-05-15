@@ -4,18 +4,13 @@ using System.Threading.Tasks;
 
 namespace IncrementalGame
 {
-    public class GameEngine : IDisposable
+    public class GameEngine(GameState gameState) : IDisposable
     {
-        private readonly GameState _gameState;
-        private Timer _timer;
+        private readonly GameState _gameState = gameState;
+        private Timer? _timer;
         private const double UpdateIntervalMilliseconds = 1000; // Update every 1 second
 
         public event Action OnGameUpdate;
-
-        public GameEngine(GameState gameState)
-        {
-            _gameState = gameState;
-        }
 
         public void Start()
         {
