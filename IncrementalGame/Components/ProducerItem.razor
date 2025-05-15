@@ -1,0 +1,38 @@
+@inject GameState GameState
+
+<div class="producer-item">
+    <h4>@Producer.Name</h4>
+    <p>Owned: @GameState.Producers.GetValueOrDefault(Producer.Id, 0)</p>
+    <p>Production:</p>
+    <ul>
+        @foreach (var production in Producer.BaseProduction)
+        {
+            <li>@production.Key: @production.Value.ToString("F2") / sec</li>
+        }
+    </ul>
+    <p>Cost:</p>
+    <ul>
+        @foreach (var cost in Producer.BaseCost)
+        {
+            <li>@cost.Key: @cost.Value.ToString("F2")</li>
+        }
+    </ul>
+    <button @onclick="BuyProducer">Buy One</button>
+</div>
+
+@code {
+    [Parameter]
+    public ProducerDefinition Producer { get; set; }
+
+    private void BuyProducer()
+    {
+        if (GameState.BuyProducer(Producer.Id))
+        {
+            // Optionally provide feedback to the user
+        }
+        else
+        {
+            // Optionally provide feedback that buying failed (e.g., not enough resources)
+        }
+    }
+}

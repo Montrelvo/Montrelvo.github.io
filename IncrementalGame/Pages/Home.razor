@@ -1,0 +1,30 @@
+﻿@page "/"
+@inject GameState GameState
+@inject GameEngine GameEngine
+@implements IDisposable
+
+<PageTitle>Incremental Game</PageTitle>
+
+<h1>Incremental Game</h1>
+
+<ResourceDisplay />
+
+<ProducerList />
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Subscribe to the game update event
+        GameEngine.OnGameUpdate += StateHasChanged;
+
+        // Start the game engine if it's not already running
+        // TODO: Add logic to check if engine is already running or handle persistence loading
+        GameEngine.Start();
+    }
+
+    public void Dispose()
+    {
+        // Unsubscribe from the game update event
+        GameEngine.OnGameUpdate -= StateHasChanged;
+    }
+}
