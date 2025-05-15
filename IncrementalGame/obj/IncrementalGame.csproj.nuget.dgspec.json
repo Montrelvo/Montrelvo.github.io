@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\IncrementalGame.csproj": {}
+    "c:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\IncrementalGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\IncrementalGame.csproj": {
+    "c:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\IncrementalGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\IncrementalGame.csproj",
+        "projectUniqueName": "c:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\IncrementalGame.csproj",
         "projectName": "IncrementalGame",
-        "projectPath": "C:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\IncrementalGame.csproj",
+        "projectPath": "c:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\IncrementalGame.csproj",
         "packagesPath": "C:\\Users\\iman2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\obj\\",
+        "outputPath": "c:\\Users\\iman2\\Desktop\\On Github Pages\\IncrementalGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iman2\\AppData\\Roaming\\NuGet\\NuGet.Config"
